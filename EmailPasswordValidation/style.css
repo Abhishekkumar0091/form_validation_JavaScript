@@ -1,0 +1,103 @@
+/* Reset default browser margin & padding,
+   and apply same box-sizing and font everywhere */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the whole page and center the form */
+body {
+  height: 100vh; /* Full screen height */
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Gradient background */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Main container that holds the form */
+.container {
+  background: #999595; /* Light gray background */
+  width: 350px; /* Fixed width */
+  padding: 25px; /* Inner spacing */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Heading style */
+.container h2 {
+  text-align: center; /* Center the heading text */
+  margin-bottom: 20px; /* Space below heading */
+  color: #141313; /* Dark text color */
+}
+
+/* Group for label, input and error */
+.input-group {
+  margin-bottom: 15px; /* Space between fields */
+}
+
+/* Label styling */
+.input-group label {
+  display: block; /* Place label above input */
+  margin-bottom: 5px; /* Space below label */
+  font-weight: bold; /* Bold text */
+  color: #1e1c1c; /* Dark color */
+}
+
+/* Input field styling */
+.input-group input {
+  width: 100%; /* Full width */
+  padding: 10px; /* Inner spacing */
+  border-radius: 4px; /* Rounded input corners */
+  border: 1px solid #ccc; /* Light border */
+  font-size: 14px; /* Text size */
+}
+
+/* Input focus effect */
+.input-group input:focus {
+  border-color: #667eea; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Error message styling */
+.error {
+  color: red; /* Error text color */
+  font-size: 12px; /* Small text */
+  margin-top: 5px; /* Space above error */
+  display: none; /* Hidden by default */
+}
+
+/* Submit button styling */
+button {
+  width: 100%; /* Full width */
+  padding: 10px; /* Button size */
+  background: #667eea; /* Button color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  color: white; /* Text color */
+  font-size: 16px; /* Text size */
+  cursor: pointer; /* Pointer on hover */
+  transition: 0.3s; /* Smooth hover effect */
+}
+
+/* Success message style */
+#resultMessage {
+  margin-top: 20px; /* Space above message */
+  text-align: center; /* Center text */
+  font-weight: bold; /* Bold text */
+  font-size: 14px; /* Text size */
+}
+.success {
+  color: green;
+}
+
+.failure {
+  color: red;
+}
+
+
+/* Button hover effect */
+button:hover {
+  background: #5a67d8; /* Darker color on hover */
+}
